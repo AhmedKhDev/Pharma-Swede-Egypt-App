@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pharma Swede-Egypt</title>
+    <style>
+        body {
+            background-color: #CEE1F2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #1B3281;
+        }
+
+        h3 {
+            color: #1B3281;
+        }
+
+        button {
+            background-color: #1B3281;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        img {
+            width: auto;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="logo" src="./img/logo_compact.png" alt="Pharma App Logo">
+    <h1>Pharma Swede-Egypt</h1>
+    <h3>Innovative Animal Health Solutions</h3>
+    <button onclick="redirectToPlayStore()">Download App from Play Store</button>
+    <br>
+    <br>
+    <button onclick="redirectToPrivacyPolicy()">Read our Privacy Policy</button>
+    <br>
+    <br>
+    <button onclick="redirectToTermsPolicy()">Read our Terms of Service</button>
+
+    <script>
+        function redirectToPlayStore() {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.arkhaleddev.pharmaswede_egypt";
+        }
+
+        function redirectToPrivacyPolicy() {
+            window.location.href = "./pages/privacy.html";
+        }
+
+        function redirectToTermsPolicy() {
+            window.location.href = "./pages/terms.html";
+        }
+    </script>
+</body>
+
+</html>
